@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Redis
+Bundle-SymbolicName: vegoo.newstock.persistent.redis;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: vegoo.newstock.persistent.redis
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: vegoo.newstock.core,
+ org.slf4j.api,
+ org.eclipse.osgi
+Service-Component: OSGI-INF/StockDataService.xml
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/commons-pool2-2.4.3.jar,
+ lib/jedis-2.9.0.jar
+Import-Package: org.osgi.service.cm

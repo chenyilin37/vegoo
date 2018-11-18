@@ -1,0 +1,4 @@
+-dsannotations: *
+Export-Package: \
+	vegoo.stockdata.core.utils,\
+	vegoo.stockdata.core

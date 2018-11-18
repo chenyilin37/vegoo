@@ -1,0 +1,28 @@
+mvn archetype:generate \
+    -DarchetypeGroupId=org.apache.karaf.archetypes \
+    -DarchetypeArtifactId=karaf-bundle-archetype \
+    -DarchetypeVersion=4.2.0 \
+    -DgroupId=vegoo.stockserver \
+    -DartifactId=vegoo.stockserver.core \
+    -Dversion=1.0.0-SNAPSHOT \
+    -Dpackage=vegoo.stockserver.core
+
+    
+mvn archetype:generate \
+    -DarchetypeGroupId=org.apache.karaf.archetypes \
+    -DarchetypeArtifactId=karaf-feature-archetype \
+    -DarchetypeVersion=4.2.0 \
+    -DgroupId=vegoo.stockserver \
+    -DartifactId=vegoo.stockserver.features \
+    -Dversion=1.0.0-SNAPSHOT \
+    -Dpackage=vegoo.stockserver.features
+        
+        
+mvn archetype:generate \
+    -DarchetypeGroupId=org.apache.karaf.archetypes \
+    -DarchetypeArtifactId=karaf-kar-archetype \
+    -DarchetypeVersion=4.2.0 \
+    -DgroupId=vegoo.stockserver \
+    -DartifactId=vegoo.stockserver.kar \
+    -Dversion=1.0.0-SNAPSHOT \
+    -Dpackage=vegoo.stockserver.kar

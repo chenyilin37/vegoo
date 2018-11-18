@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: vegoo.newstock.core
+Bundle-SymbolicName: vegoo.newstock.core
+Bundle-Name: Core
+Bundle-Version: 1.0.0.201810060203
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+

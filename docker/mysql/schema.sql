@@ -1,0 +1,15 @@
+DROP FUNCTION IF EXISTS test_add; create function test_add returns INTEGER soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS show_envs; create function show_envs returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_set; create function redis_set returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_get; create function redis_get returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_del; create function redis_del returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_getset; create function redis_getset returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_hset; create function redis_hset returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_hget; create function redis_hget returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_hmget; create function redis_hmget returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_hmset; create function redis_hmset returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_hdel; create function redis_hdel returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_sadd; create function redis_sadd returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_srem; create function redis_srem returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_zadd; create function redis_zadd returns string soname 'mysqludf_redis.so';
+DROP FUNCTION IF EXISTS redis_zrem; create function redis_zrem returns string soname 'mysqludf_redis.so';

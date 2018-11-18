@@ -1,0 +1,2 @@
+rm -fr ~/.m2/repository/vegoo/commons
+mvn clean install

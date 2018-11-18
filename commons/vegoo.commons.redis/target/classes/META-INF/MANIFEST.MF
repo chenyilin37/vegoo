@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1542522515031
+Build-Jdk: 1.8.0_191
+Built-By: chenyl
+Bundle-ManifestVersion: 2
+Bundle-Name: vegoo.commons.redis
+Bundle-SymbolicName: vegoo.commons.redis
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: vegoo.commons.redis;uses:="redis.clients.jedis";version=
+ "1.0.0"
+Import-Package: com.google.common.base;version="[23.0,24)",org.apache.co
+ mmons.pool2.impl;version="[2.4,3)",org.osgi.service.cm;version="[1.5,2)
+ ",org.slf4j;version="[1.7,2)",redis.clients.jedis;version="[2.9,3)",red
+ is.clients.jedis.params.geo;version="[2.9,3)",redis.clients.jedis.param
+ s.sortedset;version="[2.9,3)",vegoo.commons;version="[1.0,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="org.osgi.serv
+ ice.cm.ManagedService,vegoo.commons.redis.RedisService"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
+Service-Component: OSGI-INF/vegoo.commons.redis.impl.OsgiRedisServiceImp
+ l.xml
+Tool: Bnd-3.5.0.201709291849

@@ -1,0 +1,6 @@
+vegoo/commons/redis/RedisService.class
+vegoo/commons/redis/impl/RedisServiceBase$JedisCallBack.class
+vegoo/commons/redis/impl/OsgiRedisServiceImpl.class
+vegoo/commons/redis/impl/RedisServiceBase.class
+vegoo/commons/redis/RedisServiceFactory.class
+vegoo/commons/redis/impl/RedisServiceImpl.class

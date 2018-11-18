@@ -1,0 +1,13 @@
+vegoo/stockcommon/db/redis/gudong/GudongServiceImpl.class
+vegoo/stockcommon/db/redis/block/BlockStockServiceImpl.class
+vegoo/stockcommon/db/redis/sdltg/SdltgdServiceImpl.class
+vegoo/stockcommon/db/redis/jgccmx/JgccmxServiceImpl.class
+vegoo/stockcommon/db/redis/jgcc/JgccServiceImpl.class
+vegoo/stockcommon/db/redis/hq/KDayServiceImpl.class
+vegoo/stockcommon/db/redis/gdhs/GdhsServiceImpl.class
+vegoo/stockcommon/db/redis/jgccmx/ZLServiceImpl.class
+vegoo/stockcommon/db/redis/RedisBoService.class
+vegoo/stockcommon/db/redis/stock/StockServiceImpl.class
+vegoo/stockcommon/db/redis/RedisBoServiceImpl.class
+vegoo/stockcommon/db/redis/fhsg/FhsgServiceImpl.class
+vegoo/stockcommon/db/redis/block/BlockServiceImpl.class

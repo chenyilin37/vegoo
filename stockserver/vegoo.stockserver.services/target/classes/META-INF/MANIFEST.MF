@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1542522533089
+Build-Jdk: 1.8.0_191
+Built-By: chenyl
+Bundle-Activator: vegoo.stockserver.services.Activator
+Bundle-Description: vegoo.stockserver.services OSGi bundle project.
+Bundle-ManifestVersion: 2
+Bundle-Name: vegoo.stockserver.services Bundle
+Bundle-SymbolicName: vegoo.stockserver.services
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: vegoo.stockserver.services;version="1.0.0.SNAPSHOT",vego
+ o.stockserver.services.impl;version="1.0.0.SNAPSHOT";uses:="vegoo.stock
+ server.services"
+Import-Package: vegoo.stockserver.services;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.5.0.201709291849

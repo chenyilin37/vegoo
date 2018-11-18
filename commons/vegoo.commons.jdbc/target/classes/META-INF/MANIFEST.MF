@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1542522515300
+Build-Jdk: 1.8.0_191
+Built-By: chenyl
+Bundle-ManifestVersion: 2
+Bundle-Name: vegoo.commons.jdbc
+Bundle-SymbolicName: vegoo.commons.jdbc
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: vegoo.commons.jdbc;uses:="org.springframework.dao,org.sp
+ ringframework.jdbc.core,org.springframework.jdbc.support,org.springfram
+ ework.jdbc.support.rowset";version="1.0.0"
+Import-Package: javax.sql,org.springframework.dao,org.springframework.jd
+ bc.core,org.springframework.jdbc.datasource.lookup,org.springframework.
+ jdbc.support,org.springframework.jdbc.support.rowset,vegoo.commons.jdbc
+Provide-Capability: osgi.service;objectClass:List<String>="vegoo.commons
+ .jdbc.JdbcService"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(objectC
+ lass=javax.sql.DataSource)";effective:=active,osgi.ee;filter:="(&(osgi.
+ ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/vegoo.commons.jdbc.impl.JdbcServiceImpl.xml
+Tool: Bnd-3.5.0.201709291849

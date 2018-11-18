@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<features name="${project.artifactId}-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+    <repository>mvn:org.apache.cxf.karaf/apache-cxf/3.2.6/xml/features</repository>
+
+    <feature name='stockserver' description='${project.name}' version='${project.version}' resolver="(obr)">
+        <details>${project.description}</details>
+        <feature>scr</feature>
+        <feature>eventadmin</feature>
+        <feature>wrap</feature>
+        <feature>scheduler</feature>
+
+        <feature>vegoo-commons</feature>
+        <feature>stockcommons</feature>
+        
+        <feature>stockserver-core</feature>
+        <feature>stockserver-services</feature>
+        <feature>stockserver-ui</feature>
+    </feature>
+    
+    <feature name="stockserver-core" version="${project.version}">
+        <bundle>mvn:${groupId}/vegoo.stockserver.core/${project.version}</bundle>
+    </feature>
+    
+    <feature name="stockserver-services" version="${project.version}">
+        <feature>cxf-features-logging</feature>
+        <feature>cxf-jaxrs</feature>
+        <feature>cxf-commands</feature>
+        <bundle>mvn:${groupId}/vegoo.stockserver.services/${project.version}</bundle>
+    </feature>
+    
+    <feature name="stockserver-ui" version="${project.version}">
+        <feature>war</feature>
+        <bundle>mvn:${groupId}/vegoo.stockserver.ui/${project.version}</bundle>
+    </feature>
+
+</features>

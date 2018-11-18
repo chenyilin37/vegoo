@@ -1,0 +1,26 @@
+FROM java:openjdk-8-jdk-alpine
+MAINTAINER goas
+
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+
+ENV KARAF_VERSION=4.2.0
+ENV KARAF_DATA=/data
+
+RUN mkdir /opt; \
+cd /opt; \
+wget http://archive.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz; \
+tar -xzf apache-karaf-${KARAF_VERSION}.tar.gz; \
+rm apache-karaf-${KARAF_VERSION}.tar.gz; \
+mv apache-karaf-${KARAF_VERSION} karaf; \
+mkdir /deploy; \
+mkdir /data; \
+sed -i 's/^\(felix\.fileinstall\.dir\s*=\s*\).*$/\1\/deploy/' /opt/karaf/etc/org.apache.felix.fileinstall-deploy.cfg; \
+sed -i 's/^sshIdleTimeout =.*$/sshIdleTimeout = 86400000/' /opt/karaf/etc/org.apache.karaf.shell.cfg; \
+sed -i '1s/.*/#\!\/bin\/ash/' /opt/karaf/bin/karaf;\
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
+echo 'Asia/Shanghai' >/etc/timezone
+
+VOLUME ["/deploy"]
+VOLUME ["/data"]
+EXPOSE 1099 8101 44444
+ENTRYPOINT ["/opt/karaf/bin/karaf"]

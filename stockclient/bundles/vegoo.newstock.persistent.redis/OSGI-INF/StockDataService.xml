@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.2.0" configuration-pid="vegoo.redis" deactivate="deactivate" immediate="true" modified="updated" name="StockDataService">
+   <service>
+      <provide interface="vegoo.newstock.core.services.StockDataService"/>
+   </service>
+   <implementation class="vegoo.newstock.persistent.redis.impl.StockDataServiceImpl"/>
+</scr:component>

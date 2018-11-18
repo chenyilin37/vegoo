@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1542522519718
+Build-Jdk: 1.8.0_191
+Built-By: chenyl
+Bundle-ManifestVersion: 2
+Bundle-Name: vegoo.stockcommon
+Bundle-SymbolicName: vegoo.stockcommons.vegoo.stockcommon
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: vegoo.stockcommon.dao;version="1.0.0",vegoo.stockcommon.
+ utils;uses:="org.apache.karaf.scheduler";version="1.0.0",vegoo.stockcom
+ mon.bo;uses:="vegoo.stockcommon.dao";version="1.0.0"
+Import-Package: org.apache.commons.lang3;version="[3.7,4)",org.apache.ka
+ raf.scheduler;version="[4.2,5)",org.slf4j;version="[1.7,2)",vegoo.commo
+ ns;version="[1.0,2)",vegoo.stockcommon.dao
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.5.0.201709291849

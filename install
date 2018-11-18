@@ -1,0 +1,8 @@
+cd ~/vegoo/commons
+./install
+cd ~/vegoo/stockcommon
+./install
+cd ~/vegoo/stockdata
+./install
+cd ~/vegoo/stockserver
+./install
